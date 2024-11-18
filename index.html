@@ -1,42 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio 14</title>
-    <link real="stylesheet" href="style.css">
+    <title>Ejercicio de Barra de Navegación</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <body>
-        <header>
-            <nav>
-                <ul id="nav-list">
-                    <li<a href="#home">Inicio</a></li>
-                    <li<a href="#about">A cerca de</a></li>
-                    <li<a href="#services">Servicios</a></li>
-                    <li<a href="#contact">Contacto</a></li>
-                </ul>
-                <button id="nav-toggle" aria-label="toggle navigation"><img src="menu.png"></button>  
-            </nav>
-        </header> 		
-        <main>
-            
-            <section id="home">
-                <h1>Bienvenidos a nuestro sitio</h1>
-                <p> Este es el contenido 1 de mi pagina web INICIO</p>
-            </section>
-            <section id="about">
-                <h1>Bienvenidos a nuestro sitio</h1>
-                <p> Este es el contenido 2 de mi pagina web A CERDA DE</p>
-            </section>
-            <section id="services">
-                <h1>Bienvenidos a nuestro sitio</h1>
-                <p> Este es el contenido 3 de mi pagina web SERVICIOS</p>
-            </section>
-            <section id="contact">
-                <h1>Bienvenidos a nuestro sitio</h1>
-                <p> Este es el contenido 3 de mi pagina web CONTACTO</p>
-            </section>
-        </main>									
+    <header>
+        <nav>
+            <div class="logo">Mi Sitio</div>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                &#9776;
+            </label>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li>
+                    <a href="#servicios">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="#servicio1">Servicio 1</a></li>
+                        <li><a href="#servicio2">Servicio 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio"><h2>Inicio</h2><p>Bienvenido a la página de inicio.</p></section>
+        <section id="acerca"><h2>Acerca de</h2><p>Información sobre nosotros.</p></section>
+        <section id="servicios"><h2>Servicios</h2><p>Descripción de nuestros servicios.</p></section>
+        <section id="contacto"><h2>Contacto</h2><p>Contáctanos aquí.</p></section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

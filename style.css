@@ -1,88 +1,100 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+{
     margin: 0;
     padding: 0;
-}
-header{
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
-    width: 100%;     				
-    top: 0;		
-    z-index: 1000;
-    position: fixed;		
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: o auto;
-    padding: o 1em;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    gap:1em;
-    margin: 0;
-    padding: 0;
-}
-nav ul li{
-    margin: 0;
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-}
-nav ul li a:hover{                            
-    background-color: #555;
-}
-#home{
-    height: 100vh;
-    background-color: #f4f4f4;
-}
-#about{
-    height: 100vh;
-    background-color: #f4f4f4;
-}#services{
-    height: 100vh;
-    background-color: #f4f4f4;
-}#contact{
-    height: 100vh;
-    background-color: #f4f4f4;		
-}			
-section{
-    padding: 2em 0;
-}
-main{
-    margin-top: 4em;
-    padding: 2em;
-}
-@media (max-width: 768px) {
-    nav ul {
-    display: none;
-    flex-direction: column;	
-    width: 100%;
-    background-color: #333;
-    }
-    nav ul li a {
-    padding: 1em;
-    text-align: center;
-    }
-    #nav-toggle {
-    display: block;
-    }
-    .nav-open ul {
-    display: flex;
-    }
-}
-#nav-toggle{
-    display: none;
-    background: none;
-    border:  none;
-    color: white;
-    font-size: 1.5em;
-    cursor: pointer;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    color: white;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+.submenu li a {
+    padding: 0.5em 1em;
+}
+
+/* Diseño Responsive */
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul li a {
+        padding: 1em;
+        text-align: center;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav-open ul {
+        display: flex;
+    }
+}
