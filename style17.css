@@ -11,3 +11,10 @@ color: white;
 text-align: center;
 padding: 20px;
 }
+section{
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: o 4px 8px rgba(0,0);
+}
