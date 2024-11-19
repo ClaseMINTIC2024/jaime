@@ -1,3 +1,3 @@
-function mostrarMensaje(sesion){
-    alert('Este es un mensaje desde la '+sesion);
+function mostrarMensaje(seccion){
+    alert('Este es un mensaje desde la '+seccion);
 }
