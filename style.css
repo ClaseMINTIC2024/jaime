@@ -1,100 +1,38 @@
-{
+body{
+    font-family: : Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding:0;
+    background-color: #f4f4f4    
 }
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
+section {
+    background-color: white;
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+    header, footer {
     background-color: #333;
     color: white;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    padding: 1em;
-}
-
-nav .logo {
-    font-size: 1.5em;
-    color: white;
-    margin-right: auto;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    color: white;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    display: block;
-}
-
-nav ul li:hover .submenu {
-    display: block;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #444;
-    list-style: none;
-    padding: 0;
-    margin-top: 0.5em;
-}
-
-.submenu li a {
-    padding: 0.5em 1em;
-}
-
-/* Diseño Responsive */
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
+    text-align: center;
+    padding: 1em 0;
     }
-
-    nav ul li a {
+    dic{
         padding: 1em;
-        text-align: center;
     }
-
-    #nav-toggle {
-        display: block;
+    nav{
+        color: white
+        text-align: left;
+        font-size: 18;
     }
-
-    .nav-toggle-label {
-        display: block;
+    button{
+        padding: 0.5em 1em;
+        border-block-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
     }
-
-    .nav-open ul {
-        display: flex;
+    button:hover{
+        background-color: #555;
     }
-}
