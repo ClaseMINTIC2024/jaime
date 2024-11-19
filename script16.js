@@ -1,7 +1,7 @@
 function validarFormulario(){
     let nombre=document.getElementById("nombre").Value;
     let email=document.getElementById("email").Value;
-    let iamgen=document.getElementById("imagen").Value;
+    let imagen=document.getElementById("imagen").Value;
     if(nombre=="" || email=="" || imagen=="" ){
         alert("todos los campos son obligatorios");
         return false;
